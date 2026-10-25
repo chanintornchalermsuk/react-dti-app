@@ -1,11 +1,17 @@
 // Home.jsx
 import Footer from "./../components/Footer.jsx"
 import NavBarMain from "./../components/NavBarMain.jsx"
+import hero from "./../assets/hero.png"
 
 export default function Home() {
   return (
     <>
       <NavBarMain />
+      {/* แสดงรูป hero ที่อยู่ใน assets */}
+      <div>
+        <img src={hero} alt="hero" className="mx-auto my-5 w-30"/>
+      </div>
+
       <h1 className="text-center font-bold text-4xl text-blue-700 font-itim">
         Welcome to SAU
       </h1>
